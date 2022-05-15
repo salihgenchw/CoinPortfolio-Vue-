@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <FormComp />
+    <TradeList />
+    <!-- <CoinWallet /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormComp from "@/components/FormComp";
+// import CoinWallet from "@/components/CoinWallet";
+import TradeList from "@/components/TradeList";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { FormComp, TradeList },
+};
 </script>
 
 <style>
-#app {
+html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: rgb(40, 40, 40);
+  color: whitesmoke;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1008px;
 }
 </style>
