@@ -26,7 +26,12 @@ html {
 
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1008px;
+  max-width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
 }
 </style>

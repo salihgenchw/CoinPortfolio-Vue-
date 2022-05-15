@@ -90,7 +90,7 @@ input:not(:first-child) {
   border: 2px solid whitesmoke;
   padding: 20px;
   border-radius: 5px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -120,5 +120,11 @@ input:not(:first-child) {
   color: whitesmoke;
   width: 100%;
   /* transition: 1300ms all ease; */ /* Not Working mk */
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    width: 75%;
+  }
 }
 </style>
